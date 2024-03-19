@@ -6,6 +6,7 @@
     "node": ">=20.11.0 <21.0.0"
   },
   "scripts": {
+    "build": "rimraf ./build && tsc app.ts --esModuleInterop --outDir build",
     "start": "ts-node app.ts",
     "dev": "nodemon app.ts"
   },
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
   }
